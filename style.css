@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #2e3468;
+    background: radial-gradient(circle, rgb(46, 74, 117), rgb(17, 41, 146));
     font-family: "fonte_pixelizada", sans-serif;
     image-rendering: pixelated;
     -webkit-font-smoothing: none;
@@ -15,15 +15,24 @@ body {
 
 .cabecalho {
     display: flex;
+    flex-direction: column;
+    background-color: #1b2838;
     margin-bottom: 20px;
     padding: 0;
     justify-content: center;
+    align-items: center;
     border-bottom: 2px solid rgb(160, 158, 158);
 }
 
 #nome-estudio {
     color: white;
     margin: 10px;
+}
+
+.descricao-estudio {
+    color: #ccc;
+    margin: 10px;
+    padding: 0;
 }
 
 .container-jogos-principal {
