@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "fonte_pixelizada";
+    src: url('assets/fonte/fonte_pixelizada.ttf');
+}
+
+body {
+    background-color: #2e3468;
+    font-family: "fonte_pixelizada", sans-serif;
+    image-rendering: pixelated;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0;
+    justify-content: center;
+    border-bottom: 2px solid rgb(160, 158, 158);
+}
+
+#nome-estudio {
+    color: white;
+    margin: 10px;
+}
+
+.container-jogos-principal {
+    display: flex;
+    text-align: center;
+}
+
+.container-jogo-individual {
+    display: flex;
+    max-width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid rgb(160, 158, 158);
+    border-radius: 10px;
+}
+
+.container-jogo-individual img {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    margin: auto;
+    padding: auto;
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+    border: 2px solid rgb(16, 83, 114);
+    border-radius: 6px;
+}
+
+.informacoes-jogo {
+    color: white;
+    margin: auto;
+    padding: auto;
+}
+
+.botoes-loja {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    gap: 20px;
+}
+
+.link-loja {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botoes-loja button {
+    font-family: "fonte_pixelizada";
+    text-rendering: optimizeSpeed;
+    font-size: 32px;
+    border-style: none;
+    border-radius: 4px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    transition: transform 0.3s ease-out;
+}
+
+.botoes-loja button:hover {
+    background-color: #4CAF50;
+    transform: scale(1.1);
+}
+
+.botoes-loja button.steam:hover {
+    background-color: #1b2838;
+}
